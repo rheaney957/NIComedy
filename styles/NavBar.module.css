@@ -1,0 +1,330 @@
+
+.navbar {
+    background-color: #1f2c36;
+    height: 70px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    border-radius: 2px;
+    display:block;
+    margin-bottom: 5px;
+    color: #e5e5e5;
+  }
+  .navFooter {
+    display: none;
+  }
+
+  .navContainer, .navContainerMobile {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    max-width: 1500px;
+    z-index: 2;
+  }
+
+  .mainContainer {
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index: -1;
+  }
+
+  .navLogo {
+    color: #0b6971;
+    align-items: center;
+    margin-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    flex-grow: 1;
+  }
+
+  .navMenu {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    margin-right: 2rem;
+    padding-left: 0;
+    margin-top: 0;
+   margin-bottom: 0;
+  }
+
+  .navLinks {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
+    border-bottom: 3px solid transparent;
+  }
+  .fa-code {
+    margin-left: 1rem;
+  }
+
+  .navItem {
+    line-height: 40px;
+    font-weight: 600;
+    font-size: 16px;
+    border-right: 1px solid #e5e5e5;
+    padding: 0 45px;
+  }
+  .navItem:last-of-type{
+    border: none;
+  }
+
+  .navItem a {
+    text-decoration: none;
+    color: #e5e5e5;
+  }
+
+  .navItem:after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0;
+    background: transparent;
+    transition: width 0.7s ease, background-color 0.5s ease;
+  }
+
+  .navItem:hover:after {
+    width: 100%;
+    background: #D33293;
+  }
+
+
+  .navItem .active {
+    color: #D33293;
+  }
+
+  .navIcon {
+    display: none;
+  }
+
+  .SocialsContainerMobile, .SocialsContainer{
+    display: none;
+  }
+
+  .formContainerMobile, .formContainer{
+    display: none;
+  }
+
+
+  .activeIcon {
+    visibility: hidden;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .navItem {
+      font-size: 16px;
+      padding: 0 25px;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .navItem {
+      font-size: 14px;
+      padding: 0 14px;
+    }
+  }
+  @media screen and (max-width: 850px) {
+    .navItem {
+      font-size: 12px;
+      padding: 0 14px;
+    }
+  }
+
+
+  @media only screen and (max-width: 650px) and (min-width: 480px){
+    .navMenu {
+      margin-right: 0;
+    }
+    .navItem {
+      font-size: 12px;
+      padding: 0 4px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .navbar {
+      background-color: none;
+      height: 0;
+      position: static;
+    }
+    .navContainerMobile {
+      display: none;
+      background-color: transparent;
+    }
+
+    .activeIcon {
+      color: #D33293;
+      display: block;
+      visibility: visible;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-100%, 60%);
+      font-size: 42px;
+      cursor: pointer;
+      padding-top: 12px;
+      padding-right: 5px;
+      transition: visibility 0.2s ease-in-out;
+    }
+
+    .mainContainer {
+      background-color: #101413;
+      z-index: 1;
+      position: fixed;
+      height: 120vh;
+      position:absolute;
+      top:0;
+      bottom:0;
+      left:0;
+      right:0;
+    }
+
+    .mainContainerMobile{
+      background-color: unset;
+    }
+
+    .SocialsContainer{
+      display: none;
+    }
+    .SocialsContainerMobile li a {
+      color: white;
+      font-size: 24px;
+      padding: 0 10px;
+    }
+
+    .SocialsContainerMobile {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      height: 60px;
+      margin: 0;
+      z-index: 3;
+      color: white;
+      position: absolute;
+      justify-content: center;
+      padding: 0;
+      padding-right: 50px;
+      width: 100%
+    }
+
+    .SocialsContainerMobile li {
+      display: block;
+      font-weight: 800;
+      align-self: center;
+    }
+
+    .navContainer {
+      position: relative;
+      top: 40px;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+    }
+    .navContainer {
+      justify-content: center;
+    }
+
+    .navItem {
+      border: none !important;
+      color: #fff;
+      list-style-type: none;
+      font-size: 24px;
+      position: relative;
+      top: 150px;
+      border-bottom: 3px solid #fff !important;
+      font-weight: 500;
+      text-align: center;
+      padding: 10px 20px;
+      min-width: max-content;
+    }
+
+    .navItem a {
+         /* padding: 15px 80px; */
+    max-width: 350px;
+    }
+
+    .navItem:first-of-type {
+      border-top: 3px solid #fff !important;
+    }
+    .navItem:hover:after {
+      display: none;
+    }
+
+    .navMenu {
+      display: flex;
+      flex-direction: column;
+      top: 110px;
+      position: relative;
+      opacity: 1;
+      transition: all 0.3s ease;
+      width: 100%;
+      margin: 0;
+    }
+
+    .navMenu .active {
+      background: #D33293;
+      left: 0px;
+      opacity: 1;
+      z-index: 1;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .navLinks {
+      padding: 1.5rem;
+      width: 100%;
+      display: table;
+    }
+   .navFooter {
+    left: 0;
+    display: block;
+    position: absolute;
+    top: 100vh;
+    bottom: 0;
+    z-index: 20;
+    margin: 40px;
+    }
+
+  .formContainer{
+    display: none;
+  }
+  .formContainerMobile form {
+    color: white;
+    font-size: 22px;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  .formContainerMobile form input {
+    width: 100%;
+    padding: 6px 2px;
+  }
+
+  .formContainerMobile form button {
+    margin: 10px 0;
+  }
+
+  .formContainerMobile {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    z-index: 1;
+    color: white;
+    justify-content: center;
+    padding: 0;
+    position: relative;
+    top: 40vh;
+    margin: 24px;
+  }
+}
