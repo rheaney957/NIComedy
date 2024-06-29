@@ -1,0 +1,262 @@
+@import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
+
+.container {
+  width: 100%;
+  color: #fff;
+}
+.searchDate {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+.searchDate input {
+  margin-bottom: 20px;
+  width: 100%;
+  min-width: 15%;
+  height: 40px;
+  font-size: 16px;
+  color: #464646;
+  border-radius: 4px;
+  border: none;
+  padding: 0 10px;
+  background-size: 25px;
+  background-position: right;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  background-position: 95%;
+}
+
+.searchDate:last-child {
+  align-items: flex-end;
+}
+.searchDate .react-datepicker-wrapper div {
+  display: flex;
+  justify-content: flex-end;
+  width: 20%;
+}
+.DatepickerContainer {
+  width: auto !important;
+  margin-right: 10px !important;
+}
+
+.searchDateImg {
+  display: block;
+  position: relative;
+  /* left: -35px; */
+  top: 0;
+  color: #464646;
+}
+
+.emptyContainer{
+  width: 103%;
+  justify-content: center;
+  display: flex;
+}
+.searchText{
+  justify-content: center;
+  display: flex;
+}
+.searchText input {
+  font-size: 16px;
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  border: none;
+  padding: 0 10px;
+  margin-bottom: 20px;
+  padding-right: 35px;
+  text-overflow: ellipsis;
+}
+
+.searchText::after {
+  content: "\f002";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  right: 30px;
+  top: 10px;
+  position: relative;
+}
+.searchTextNone::after {
+  content: none !important;
+}
+
+#search input[type="search"]::-webkit-input-placeholder,
+.searchText input::-moz-placeholder {
+   color: #464646;
+}
+@media (min-width: 780px) {
+  .followUS {
+    visibility: visible !important;
+  }
+}
+
+
+@media (min-width: 980px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1.5fr 0.6fr;
+    grid-template-rows: 1fr repeat(auto-fill, minmax(100px, 0.5fr));
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+  .searchDate {
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .searchDate input {
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 0;
+    width: auto;
+  }
+  .searchDate .react-datepicker-wrapper {
+    width: auto !important;
+  }
+  .emptyContainer {
+    grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .searchText input {
+    margin-bottom: 0;
+    padding-right: 35px;
+    text-overflow: ellipsis;
+  }
+  .searchText::after {
+    content: "\f002";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    right: 30px;
+    top: 0;
+    position: relative;
+  }
+  .featured {
+    visibility: visible !important;
+  }
+  .followUS {
+    visibility: visible !important;
+  }
+  .cardsFeatured {
+    min-height: 50vh;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+  }
+  .cardsFeatured div{
+    margin-bottom: 5px;
+  }
+}
+
+.searchText input::placeholder {
+  font-size: 16px;
+  color: #464646;
+}
+
+.header {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.featured {
+  visibility: hidden;
+  font-size: 24px;
+  color: #fff;
+  font-weight: 600;
+}
+.followUS {
+  visibility: hidden;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+}
+.cardsGigs {
+  height: auto;
+  /* overflow: scroll; */
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+@media (min-width: 1200px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1.5fr 0.3fr;
+    grid-template-rows: 1fr repeat(auto-fill, minmax(100px, 0.5fr));
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+}
+
+@media (max-width: 979px) {
+  .cardsFeatured {
+    max-height: 80vh;
+    border-radius: 4px;
+    min-height: 600px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    display: none;
+  }
+}
+@media (max-width: 520px) {
+  .cardsFeatured {
+    max-height: 80vh;
+    min-height: 50vh;
+    border-radius: 4px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    display: none;
+  }
+  .searchDate {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  .socialsList {
+    align-self: center;
+    padding: 0;
+  }
+}
+
+.loadMore {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.loadedText {
+  margin-bottom: 8px;
+  color: white;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.socialsList li a {
+  color: #fff;
+  font-size: 24px;
+  padding: 0 10px
+}
+
+.socialsList {
+  display: flex;
+  flex-direction: row;
+  display: wrap;
+  flex-wrap: wrap;
+  list-style: none;
+  height: 60px;
+  margin: 0;
+  min-width: fit-content;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+.socialsList li {
+  display: block;
+  font-weight: 800;
+  align-self: center
+}
