@@ -370,3 +370,15 @@
     width: 100% !important;
   }
 }
+
+
+/* about */
+
+.terms {
+    font-style: italic;
+    margin-top: 50px;
+}
+
+.bookingText {
+ margin-bottom: 20px !important;
+}

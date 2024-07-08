@@ -21,7 +21,7 @@ export default function ContactUsForm()
   };
 
   return (
-    <form action="location.php" method="post" className={styles.form}>
+    <form action="/api/email.php" method="POST" className={styles.form}>
       {!submit ?
         <>
           <p>If you have any questions regarding Shine please use the form below. We will be

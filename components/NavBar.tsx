@@ -78,6 +78,15 @@ export default function NavBar({menu, setMenu}: NavBarProps)
                                 {"TSW Mgmt"}
                             </Link>
                         </li>
+                        <li className={styles.navItem} onClick={() => setMenu(false)}>
+                            <Link
+                                legacyBehavior
+                                href="./bookings"
+                                className={router.pathname == "/" ? (styles.navLinks, styles.active) : styles.navLinks}
+                            >
+                                {"Corporate Bookings"}
+                            </Link>
+                        </li>
                     </ul>
                     <div  className={menu ? styles.formContainerMobile :  styles.formContainer}>
                         <form id="subscribe-form" action="//www.venuecloud.net/s/f/27/17" method="POST" className={styles.footerForm}>

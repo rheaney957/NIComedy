@@ -1,10 +1,30 @@
-.form {
-    width: 100%;
-    padding: 20px 20px 0 20px ;
+/* Booking Form */
+.booking input[type="email"],
+.booking input[type="text"] {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+  width: 100% !important;
+  display: flex;
+  align-items: center;
 }
+
+.booking {
+   padding: 0 50px;
+}
+
+.booking label {
+ font-weight: 700;
+}
+
+/* Default Form */
+.form {
+  width: 100%;
+  padding: 20px 20px 0 20px;
+}
+
 .form input:focus,
 .form textarea:focus {
-    border: 2px solid #06494f;
+  border: 2px solid #06494f;
 }
 
 .form input[type="email"],
@@ -22,9 +42,8 @@
   cursor: pointer;
 }
 .form label {
-    width: 100%;
+  width: 100%;
 }
-
 
 .form textarea {
   height: 100px;
@@ -33,20 +52,20 @@
 }
 
 .submit {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
-.submit input[type="submit"], .submit label {
-    width: 100%;
+.submit input[type="submit"],
+.submit label {
+  width: 100%;
 }
-
-
 
 @media (min-width: 780px) {
-    .submit {
-        justify-content: flex-end;
-    }
-    .submit input[type="submit"], .submit label {
-        width: unset;
-    }
+  .submit {
+    justify-content: flex-end;
+  }
+  .submit input[type="submit"],
+  .submit label {
+    width: unset;
+  }
 }
