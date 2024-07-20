@@ -2,7 +2,7 @@
   padding: 0 3rem;
   min-height: 100vh;
   display:flex;
-   flex-direction:column;
+  flex-direction:column;
 }
 
 .main {
@@ -368,6 +368,9 @@
 @media screen and (max-width: 480px) {
   .contact div label  {
     width: 100% !important;
+  }
+  .container {
+    width: 100%;
   }
 }
 
