@@ -50,6 +50,14 @@ export default function Footer(props: FooterProps)
                 Contact Us
               </Link>
             </li>
+            <li>
+              <Link
+                href="./bookings"
+                className={router.pathname == "/" ? (styles.navLinks, styles.active) : styles.navLinks}
+              >
+                {`Corporate Bookings`}
+              </Link>
+            </li>
           </ul>
           <ul className={styles.footerSocialsList}>
             <li><a href="https://www.facebook.com/comedybelfast" target="_blank" rel="noreferrer">Facebook</a></li>

@@ -2,7 +2,7 @@
   padding: 0 3rem;
   min-height: 100vh;
   display:flex;
-   flex-direction:column;
+  flex-direction:column;
 }
 
 .main {
@@ -369,4 +369,19 @@
   .contact div label  {
     width: 100% !important;
   }
+  .container {
+    width: 100%;
+  }
+}
+
+
+/* about */
+
+.terms {
+    font-style: italic;
+    margin-top: 50px;
+}
+
+.bookingText {
+ margin-bottom: 20px !important;
 }

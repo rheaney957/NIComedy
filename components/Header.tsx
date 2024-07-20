@@ -14,7 +14,7 @@ export default function Header(props: HeadProps)
   return (
     <>
     <Head>
-      <title>Belfast Comedy</title>
+      <title>NI Comedy</title>
     </Head >
           <header className={styles.header}>
           <div className={styles.shineLogo}>

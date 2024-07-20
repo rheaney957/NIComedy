@@ -19,7 +19,7 @@ export default function ContactUs({menu, setMenu}: ContactUsProps)
      <Header route='Contact Us'/>
       <NavBar menu={menu} setMenu={setMenu}/>
       <main className={!menu ? styles.main : styles.mainMobile}>
-        <Layout title="Contact Us">
+        <Layout title="Contact Us" FAQs={true}>
           <section className={styles.contact}>
             <ContactUsForm/>
           </section>
