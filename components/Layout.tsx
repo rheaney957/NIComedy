@@ -207,8 +207,8 @@ const Layout: FC<LayoutPropTypes> = ({
           </div>
           <ul className={styles.socialsList}>
             <li><span className={styles.followUS}>FOLLOW US ON  <i className="fa fa-chevron-right" aria-hidden="true"></i><i className="fa fa-chevron-right" aria-hidden="true"></i></span></li>
-            <li><a href="https://www.facebook.com/comedybelfast/" target="_blank" rel="noreferrer"><i className="fa-brands fa-facebook"></i></a></li>
-            <li><a href="https://www.instagram.com//belfastcomedy/" target="_blank" rel="noreferrer"><i className="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.facebook.com/NIComedyOfficial/" target="_blank" rel="noreferrer"><i className="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com//nicomedyofficial/" target="_blank" rel="noreferrer"><i className="fa-brands fa-instagram"></i></a></li>
           </ul>
         </div>
         <div className={styles.emptyContainer}/>

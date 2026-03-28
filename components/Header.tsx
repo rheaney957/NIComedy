@@ -21,7 +21,7 @@ export default function Header(props: HeadProps)
           <Link href="./"><img style={{width: '300px'}} src={Logo.src} alt="shine-logo" /></Link>
           </div>
           <div className={styles.socials}>
-          <form id="subscribe-form" action="//www.venuecloud.net/s/f/27/17" method="POST" className={styles.footerForm}>
+          <form id="subscribe-form" action="//www.venuecloud.net/s/f/36/17" method="POST" className={styles.footerForm}>
 	          <input type="hidden" name="contact_permission" value="yes"/>
             <input className={styles.mailingList} type="text" name="email" placeholder="Email"required  />
             <input type="hidden" id="source" name="source" value="website"/>

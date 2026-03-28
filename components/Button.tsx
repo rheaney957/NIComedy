@@ -9,14 +9,16 @@ export type ButtonProps = HTMLAttributes<HTMLButtonElement> & {
   disabled?: boolean;
   onClick?: () => void;
   style?: any;
+  target?: string;
 };
 
-export default function Button({context = 'primary', text, ticketsUrl, disabled, onClick, style}: ButtonProps) {
+export default function Button({context = 'primary', text, ticketsUrl, disabled, onClick, style, target}: ButtonProps) {
 
   return (
     <button style={style} disabled={disabled} className={styles[context]} onClick={onClick}>
       {!onClick && <Link
         href={ticketsUrl ?? 'https://www.ticketmaster.ie/'}
+        target={target}
       >
         {text}
       </Link>}

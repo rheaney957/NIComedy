@@ -65,7 +65,7 @@ export default function Card({gig: {
             </div>
           </div>
           <div className={styles.cardTickets}>
-            <Button ticketsUrl={ticketsUrl} style={{fontWeight: '600'}} disabled={!!status} text={status ? "SOLD OUT" : "Buy Tickets"} />
+            <Button target='_blank'  ticketsUrl={ticketsUrl} style={{fontWeight: '600'}} disabled={!!status} text={status ? "SOLD OUT" : "Buy Tickets"} />
           </div>
         </div>
       </div>

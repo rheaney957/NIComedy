@@ -52,8 +52,8 @@ export default function Footer(props: FooterProps)
             </li>
           </ul>
           <ul className={styles.footerSocialsList}>
-            <li><a href="https://www.facebook.com/comedybelfast" target="_blank" rel="noreferrer">Facebook</a></li>
-            <li><a href="https://www.instagram.com/belfastcomedy/" target="_blank" rel="noreferrer">Instagram</a></li>
+            <li><a href="https://www.facebook.com/NIComedyOfficial" target="_blank" rel="noreferrer">Facebook</a></li>
+            <li><a href="https://www.instagram.com/nicomedyofficial/" target="_blank" rel="noreferrer">Instagram</a></li>
             <li>
               <Link
                 href="./privacy-policy"
@@ -67,7 +67,7 @@ export default function Footer(props: FooterProps)
 
         </div>
         <div className={styles.footerMailing}>
-          <div className={styles.footerCopyright}>TSW Management Limited Copyright {new Date().getFullYear()} </div>
+          <div className={styles.footerCopyright}>TSW Management Services Ltd Copyright {new Date().getFullYear()} </div>
 
 
         </div>
