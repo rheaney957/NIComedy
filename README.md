@@ -1,34 +1,56 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# NI Comedy — Belfast Comedy Shows Website
+
+A static website for Northern Ireland's largest live comedy promoter, built with Next.js. The site lists upcoming comedy shows, provides event details, and allows fans to search by artist or date.
+
+## Tech Stack
+
+- Next.js 13 (Pages Router, static export)
+- React 18 / TypeScript
+- CSS Modules
+- Font Awesome icons
+- SWR for data fetching
+- React DatePicker for date-based search
+- Sharp for image optimization
+
+## Pages
+
+- `/` — Comedy shows listing with search by artist/date
+- `/about` — About NI Comedy
+- `/comedy-gallery` — Photo gallery
+- `/contact-us` — Contact form
+- `/help-and-FAQs` — Frequently asked questions
+- `/privacy-policy` — Privacy policy
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the site.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Build & Export
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+The project is configured for static export:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```bash
+npm run build
+```
 
-## Learn More
+This runs `next build` followed by `next export`, outputting static files to the `out/` directory.
 
-To learn more about Next.js, take a look at the following resources:
+## Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+components/    — Reusable UI components (NavBar, Header, Footer, Card, Carousel, etc.)
+pages/         — Next.js page routes
+public/        — Static assets (images, gallery, JSON data)
+styles/        — CSS Modules
+fonts/         — Custom fonts (Bebas)
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Data Sources
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Show listings are fetched from the Shine.net events API
+- Gallery images and featured gigs are loaded from JSON files in `public/JSON/`
